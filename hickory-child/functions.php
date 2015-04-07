@@ -9,3 +9,19 @@
     }
     add_filter('the_content', 'content_donate');
 //<!-- AlAnRu 20140609 end -->
+
+
+class Hickory
+{
+    public function __construct()
+    {
+        add_action( 'after_setup_theme', array( $this, 'init' ) );
+    }
+
+    public function init()
+    {
+        add_theme_support("aesop-component-styles", array("parallax", "image", "quote", "gallery", "content", "video", "audio", "collection", "chapter", "document", "character", "map", "timeline" ) );
+    }
+}
+
+$hickory = new Hickory();
