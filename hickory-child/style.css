@@ -1,0 +1,26 @@
+/*
+Theme Name:     Hickory Child
+Theme URI:      http://dvascheta.ru/
+Description:    Customized Hickory 
+Author:         Alexey Anisimov
+Author URI:     http://dvascheta.ru/
+Template:       hickory
+Version:        0.1.0
+*/
+
+@import url("../hickory/style.css");
+
+body {
+	
+	font-family:Arial, "Droid Sans", sans-serif;
+	font-size:14px !important;
+}
+
+.post-entry p {
+    font-size: 14px;
+    color: #000;
+}
+
+p {
+    font-size: 14px;
+}
