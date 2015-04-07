@@ -63,7 +63,13 @@
 	<div id="wrapper">
 
 		<div class="container layout3">
-			<div class="pre-content-line"><?php echo do_shortcode('[vital_currency_rates]'); ?></div>
+				<div class="pre-content-line">
+					<div class="pull-left"><?php get_search_form(); ?></div>
+					<div class='pull-right'>
+							<?php echo do_shortcode( '[vital_currency_rates]' ); ?>
+					</div>
+				</div>
+		</div>
 
 		<div class="topads">
 
