@@ -63,7 +63,7 @@
 	<div id="wrapper">
 
 		<div class="container layout3">
-			<div class="pre-content-line"><?php echo do_shortcode('vital_currency_rates'); ?></div>
+			<div class="pre-content-line"><?php echo do_shortcode('[vital_currency_rates]'); ?></div>
 
 		<div class="topads">
 
