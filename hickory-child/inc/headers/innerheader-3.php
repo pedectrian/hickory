@@ -1,36 +1,36 @@
 	<div id="header" class="layout3">
 		<div class="container">
-		
+
 			<div id="logo">
-			
+
 				<?php if(hick_option('hick_logo')) : ?>
 					<a href="<?php echo home_url(); ?>"><img src="<?php echo hick_option('hick_logo'); ?>" alt="<?php bloginfo( 'name' ); ?>" /></a>
 				<?php else : ?>
 					<a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="<?php bloginfo( 'name' ); ?>" /></a>
 				<?php endif; ?>
-				
+
 			</div>
-			
+
 			<?php if(hick_option('hick_header_ad')) : ?>
 				<div class="header-ad">
 					<?php echo hick_option('hick_header_ad'); ?>
 				</div>
 			<?php endif; ?>
-		
+
 		</div>
-			
+
 	</div>
-	
+
 	<div id="navigation_bar" class="layout3">
-		
+
 		<div class="container top">
-			
+
 			<div id="navigation">
-				<?php wp_nav_menu( array( 'container' => false, 'theme_location' => 'primary-menu' ) ); ?>	
+				<?php wp_nav_menu( array( 'container' => false, 'theme_location' => 'primary-menu' ) ); ?>
 			</div>
-			
+
 			<?php if(hick_option('hick_search_nav')) : ?>
-				
+
 				<div id="top_search">
 					<a href="#"><i class="icon-search"></i></a>
 				</div>
@@ -38,9 +38,9 @@
 					<?php get_search_form(); ?>
 				</div>
 			<?php endif; ?>
-				
+
 			<?php if(hick_option('hick_header_social')) : ?>
-			
+
 				<div id="top_social" <?php if(!hick_option('hick_search_nav')) : ?>class="search"<?php endif; ?>>
 					<?php if(hick_option('hick_facebook')) : ?><a href="http://facebook.com/<?php echo hick_option('hick_facebook'); ?>"><i class="icon-facebook"></i></a><?php endif; ?>
 					<?php if(hick_option('hick_twitter')) : ?><a href="http://twitter.com/<?php echo hick_option('hick_twitter'); ?>"><i class="icon-twitter"></i></a><?php endif; ?>
@@ -53,19 +53,20 @@
 					<?php if(hick_option('hick_soundcloud')) : ?><a href="http://soundcloud.com/<?php echo hick_option('hick_soundcloud'); ?>"><i class="icon-cloud"></i></a><?php endif; ?>
 					<?php if(hick_option('hick_dribbble')) : ?><a href="http://dribbble.com/<?php echo hick_option('hick_dribbble'); ?>"><i class="icon-dribbble"></i></a><?php endif; ?>
 				</div>
-				
+
 			<?php endif; ?>
 
 		</div>
-	
+
 	</div>
-	
+
 	<div id="wrapper">
-	
+
 		<div class="container layout3">
+			<div class="pre-content-line"><?php echo do_shortcode('vital_currency_rates'); ?></div>
 
 		<div class="topads">
-		
+
 		<!-- Pingmedia TopLine code START-->
 <script language="javascript" type="text/javascript"><!--
 (function(L){if(typeof(ar_cn)=="undefined")ar_cn=1;
