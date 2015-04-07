@@ -31,9 +31,15 @@ p {
 .pre-content-line .left-column,
 .pre-content-line .right-column {
 		display: inline-block;
-		width: 469px;
+		width: 465px;
 }
 
 .pre-content-line .right-column {
-		text-align: left;
+		text-align: right;
+}
+
+.pre-content-line .left-column input[type="text"] {
+		width: 177px;
+	  padding: 10px;
+		background: #fff url(img/searchsubmit.png) no-repeat 96% 8px !important;
 }
