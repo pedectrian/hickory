@@ -64,8 +64,8 @@
 
 		<div class="container layout3">
 				<div class="pre-content-line">
-					<div class="pull-left"><?php get_search_form(); ?></div>
-					<div class='pull-right'>
+					<div class="left-column"><?php get_search_form(); ?></div>
+					<div class='right-column'>
 							<?php echo do_shortcode( '[vital_currency_rates]' ); ?>
 					</div>
 				</div>

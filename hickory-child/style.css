@@ -26,6 +26,14 @@ p {
 }
 
 .pre-content-line {
-		text-align: right;
 		margin-bottom: 10px;
+}
+.pre-content-line .left-column,
+.pre-content-line .right-column {
+		display: inline-block;
+		width: 469px;
+}
+
+.pre-content-line .right-column {
+		text-align: left;
 }
